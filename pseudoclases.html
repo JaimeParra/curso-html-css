@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo clases</title>
+
+<style>
+    .main-nav
+    {
+        margin-top: 10px;
+        list-style: none;
+        padding-left: 0;
+        background-color: #13a4a4;
+
+    }
+    .main-nav_item
+    {
+        display: inline-block;
+
+    }
+    .main-nav_item a
+    {
+        color: white;
+        padding: 5px;
+        border-radius: 2px;
+        text-decoration: none;
+    }
+    .main-nav_item a:hover
+    {
+        color: blue;
+    }
+    .main-nav_item a:active
+    {
+        color: red;
+    }
+    .main-nav_item a::after
+    {
+        content: " | ";
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav_item">
+                    <a href="">Home</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="">Cursos</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="">Instructores</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
